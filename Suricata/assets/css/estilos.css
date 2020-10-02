@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ 
+.container{
+    margin-top: 100px;
+}
+
+h1{
+    /*margin-top: 70px;*/
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    color: #707070;
+    font-weight: bold;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.card{
+    margin: auto;
+}
+
+.row > div {
+    padding: 10px;
+ 
+}
+
+.navbar, footer{
+   background: #e83e8c;
+   border: none;
+}
+
+ .logo{
+     width: 25%;
+     margin-left: 50px;
+ }
+
+.navbar-brand {
+    height: 50px;
+}
+
+.container {
+     
+    list-style: none;
+    padding: 10px;
+    width: 70%;
+
+}
+.dos{
+    background: #17A2B8;
+    height: 170px;
+}
+
+footer{
+    margin: auto;
+    height: 184px;
+    display: block;
+    padding: 40px 45%;
+}
+
+footer>img{
+    margin: auto;
+    width: 53px;
+    height: 100px;
+}
+
+.row{
+    margin-top: 5%;
+    padding: 0;
+}
+
+.row .li{
+    background: red;
+}
+
+.card-title{
+    font-size: 17px;
+    color: #373A3C;
+     
+}
+.card-body p{
+    font-size: 16px;
+    color: #373A3C;
+}
+
+.list-group-item{
+    font-size: 11px;
+    color: #373A3C;
+}
+
+.card-link{
+    font-size: 11px;
+}
+
+.card .row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+ 

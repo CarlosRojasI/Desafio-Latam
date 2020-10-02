@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar {
+    background: #090a09;
+}
+
+.navbar-brand>p{
+    font-family: 'Lobster', cursive !important;
+    margin: auto;
+}
+
+
+    
+
+hr{
+    height: 1px;
+    background: grey;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    background: white;
+    border: solid 1px grey;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: rgb(17, 16, 16);
+    color: white;
+}
+
+.card-text{
+    text-align: center;
+}
+
+#card-text .botones{
+    display: none;
+}
+
+#recetas{
+    padding: 20px;
+    margin: auto;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+#recetas ul{
+    list-style: none;
+}
+
+.recetas{
+    float: left;
+    padding: 0 50px 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+footer{
+    background: black;
+    height: 100px;
+}
+
+footer>p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.contacto{
+    background: red;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.contacto p{
+    font-size: 16px;
+}
+
+.contacto p span{
+    font-family: 'Lobster', cursive;
+}

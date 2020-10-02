@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Rinconada</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+<div class="container mx-0"></div>
+<!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><p>Ricomida</p></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+<!-- seccion principal -->
+
+    <div class="row p-4">
+        <div class="col-12 col-md-6">
+            <img src="assets/img/principal.jpg" alt="" srcset="">
+        </div>
+
+        <div class="col-12 col-md-6 ">
+            <div class="card-body m-auto">
+                <h5 class="card-title">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h5>
+               <hr>
+                <p class="card-text">110 MIN / 6 A 8 PORCIONES</p>
+                <div id="botones" class="boton d-inline-block">
+                    <button data-toggle="tooltip" data-placement="top" title="Presiona para enviar a tu correo">Enviar por correo</button>
+                </div>
+                <div id="botones" class="boton d-inline-block">
+                    <button data-toggle="tooltip" data-placement="top" title="Agregame a tus favoritos">añadir a favoritos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Carrusel -->
+
+
+<section class="container-box mx-0 p-4 d-none d-lg-block d-print-block"> 
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-1.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-2.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-3.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-4.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+            </div>
+            <!--.row-->
+        </div>
+        <!--.item-->
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-5.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-6.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-7.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="assets/img/slider-8.png" alt="Image" style="max-width:100%;">
+                    </a>
+                </div>
+            </div>
+            <!--.row-->
+        </div>
+        <!--.item-->
+
+    </div>
+</section>
+
+<!--  recetas  -->
+
+    <div class="row">
+    <div id="recetas">    
+        <div class="recetas col-12 col-md-6">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Masa</li>
+                <li>20 gr de levadura seca instantanea</li>
+                <li>1 cucharadita de azúcar</li>
+                <li>500 ml agua tibia</li>
+                <li>100 ml aceite vegetal</li>
+                <li>4 cucharadas de aceite de oliva</li>
+                <li>65 gr harina de maíz fina (chuchoca)</li>
+                <li>2 cucharaditas de sal</li>
+                <li>625 gr harina</li>
+                <li>Salsa</li>
+                <li>5 cucharadas de aceite de oliva</li>
+                <li>1/2 cebolla picada en cubitos finos</li>
+                <li>2 cucharaditas de sal</li>
+                <li>3 cucharadita de orégano Gournet</li>
+                <li>1 1/2 cucharaditas de Albahaca Gournet</li>
+                <li>2 tarros de tomates en cubos </li>
+            </ul>
+        </div>
+
+        <div class="recetas col-12 col-md-6">
+            <h3>Preparación</h3>
+            <ol>
+                <li>Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400 grs de harina. Mezclar bien. Amasar y agregar el resto, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue). Poner la masa en un bol aceitado tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</li>
+                <li>Mientras tanto preparar la salsa: Calentar 4 cuchadas de aceite en una olla a fuego medio. Agregar la cebolla, orégano gourmet, albahaca gourmet, sal y cocinar hasta que la cebolla este dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hastaque la mezca se haya reducido y espesado, como 30 minutos sazonar con sal y pimienta a gusto. Reservar</li>
+                <li>Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que esten cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</li>
+                <li>Calentar el horno a 220°C</li>
+                <li>Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con eñ queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</li>
+                <li>Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. esperar unos minutos antes de desmoldar.</li>
+            </ol>
+        </div>
+    </div>
+
+<!-- Modal y  Cartas en recetario -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PANQUEQUES CON MANJAR Y CREMA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="col-12 col-md-4 p-3">
+                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container">
+    
+        <hr>
+
+        <h2>RECETAS RELACIONADAS</h1>
+        <div class="row mx-0 p-5 W-25">
+        
+
+
+            <div class="col-12 col-md-4 p-3">
+                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 p-3">
+                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TIRAMISU</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 p-3">
+                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PLATEADA</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit   </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>  
+
+<!--  seccion contacto  -->
+
+<div class="contacto">
+<h4>SUSCRIBETE EN NUESTRO NEWSLETTER</h4>
+    <P>y obtén las mejores recetas que tenemos en <span> Ricomida</span></P>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/wiH5tiD6" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> <a href="https://admin.typeform.com/signup?utm_campaign=wiH5tiD6&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank"></a> </div>
+
+
+</div>
+
+<!--  Footer  -->
+
+    <footer>
+       <P>Ricomida</P>
+    </footer>
+
+
+</div>
+
+    <!-- seccion 2 
+
+
+
+
+
+ -->
+
+    
+    <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS 4.2.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+ 
+</body>
+</html>

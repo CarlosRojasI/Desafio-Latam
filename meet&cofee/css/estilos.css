@@ -1,0 +1,220 @@
+body {
+    text-align: center;
+    color: #000f08;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.oscuro {
+    background: #2b3530;
+    color: #ffffff;
+    padding: 0.25rem;
+}
+
+.oscuro a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sweet-brown {
+    text-align: left;
+    background: #a4452c;
+    color: #ffffff;
+    padding: 50px;
+    white-space: nowrap;
+}
+
+#inicio {
+    padding-top: 58px;
+}
+
+.hero-section {
+    text-align: right;
+    background-image: url('../img/bg-hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: cover;
+    color: #ffffff;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    padding: 6.25rem 3.125rem;
+    
+}
+
+section, footer {
+    margin-top: 58px;
+}
+
+.proxima-charla {
+    padding-top: 85px;
+}
+
+.charla-speaker, .charla-texto {
+    display: inline-block;
+    }
+
+.charla-speaker, .charla-texto, .evento {
+    display: inline-block;
+}
+
+.centrado {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.charla-speaker {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.charla-texto {
+    width: 72.5%;
+    vertical-align: middle;
+    margin-left: 2.5%;
+    white-space: normal;
+}
+
+.evento {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.evento>img {
+    width: 72.5%;
+}
+
+
+
+.eventos {
+    padding-top: 50px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.75em;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+#ubicacion {
+    margin-top: 150px;
+}
+
+.subtitulo {
+    font-weight: 400;
+}
+
+.subtitulo, h4, h5 {
+    font-weight: 400;
+}
+
+#ubicacion h2 {
+    margin: 1em;
+}
+
+.sweet-brown h3, .sweet-brown h5 {
+    margin-bottom: 0.5em;
+}
+
+#eventos h2 {
+    margin-bottom: 1em;
+}
+
+#eventos h3 {
+    margin: 1em auto;
+}
+/*barra nav */
+
+nav {
+    height: 50px;
+    text-align: left;
+    padding: 1.25rem 4rem;
+    position: fixed;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 0.5rem;
+    font-size: 22px;
+}
+
+nav ul li {
+    display: inline-block;
+        margin: 0 1em;
+        vertical-align: middle;
+}
+
+#icono {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.icono svg {
+    padding-left: 25px;
+    width: 2rem;
+}
+
+footer {
+    height: 180px;
+    padding: 50px;
+}
+
+footer i {
+    padding-top: 10px;
+    margin: 0 0.25em 0.5em 0.25em;
+    
+}
+
+/** eventos 2  **/
+
+.evento-hijo>img {
+    width: 1005px;
+    height: 565px;
+}
+
+.eventos-hijo {
+    padding-top: 58px;
+}
+
+#eventos-hijo .evento-hijo>h2 {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 170px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#eventos-hijo .evento-hijo>p {
+     
+    margin: 0 auto;
+    width: 1005px;
+    height: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 0px;
+     
+}
