@@ -1,91 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRUSEL </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--CSS de Bootstrap 4.2.1-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <!--Mi estilo-->
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+</head>
 
 <body>
-    
+  <div id="carouselExampleIndicators" class="carousel slide p-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
 
-    <div class="container m-auto">
-      <div class="col-12 bg-light text-white rounded pb-1">
-        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-          <ol class="carousel-indicators">
-            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#blogCarousel" data-slide-to="1"></li>
-          </ol>
-
-          <div class="carousel-inner">
-
-            <div class="carousel-item active text-center">
-              <div class="row">
-                <div class="col-3">
-                  <img src="assets/img/slider-1.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-2.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Apper"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-3.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Angry Creative"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-4.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Google"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="row">
-                <div class="col-3">
-                  <img src="assets/img/slider-5.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="500px"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-6.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Apple"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-7.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Aviato"></i>
-                </div>
-                <div class="col-3">
-                  <img src="assets/img/slider-8.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dungeons & Dragons"></i>
-                </div>
-              </div>
-            </div>
-
-          </div>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-1.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-2.png"Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-3.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-4.png" alt="Second slide"></div>
         </div>
+
       </div>
 
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-5.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-6.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-7.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-8.png" alt="Second slide"></div>
+        </div>
 
+      </div>
     </div>
 
+  </div>  
 
-    <!--jQuery 3.3.1 sin slim-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
 
-    <!--Popper JS 1.14.3-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <!--Bootstrap JS 4.2.1-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <!--Mi script-->
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>

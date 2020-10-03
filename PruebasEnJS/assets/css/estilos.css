@@ -1,0 +1,65 @@
+body {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    background-image: url('/PruebasEnJS/assets/img/Punta_de_Tralca.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 10rem;
+    height: 537px;
+  }
+
+  .hero p{
+      padding: 0px;
+      color: black;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: 0;
+      border: none;
+  }
+
+  hr{
+      border: solid black 1px;
+      width: 75%;
+  }
+
+.container-hero{
+    padding-top: 18%;
+}
+
+#carrusel{
+    background-color: red;
+    padding: 30px;
+
+}
+
+.indicador{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: grey !important;
+}
+
+.carousel-item{
+    display: none;
+}
+
+.carrusel-caja{
+    background: greenyellow;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 100px;
+}
+
+.carrusel-caja h3{
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgb(18, 131, 18);
+    font-size: 35px;
+}
+
+
+

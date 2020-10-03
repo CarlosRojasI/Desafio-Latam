@@ -1,23 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pruebas de JavaScript</title>
+
+    <!--CSS de Bootstrap 4.2.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+    <!--Personalizados-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
 
+<!--Barra de Navegacion NAVBAR manejada por BOOPSTRAP 4.2.1-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img src="assets/img/..." alt=""> </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#exper">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--HERO seccion principal-->
+
+<header class="hero text-lig text-center pt-5 mt-5">
+    <div class="container-hero">
+      <h1 class="display-3 font-weight-bold my-5 p-1">Soy Carlos</h1>
+      <hr>
+      <p class="text-light-center">Este es mi portafolio.</p>
+    </div>
+  </header>
 
 
 
-<button onclick="ejecutable()">Llamar funcion </button>
+<!--Carrusel de hobbies-->
+<div class="carrusel-caja">
+    <h3>MIS HOBBIES</h3>
+<div id="carouselExampleIndicators" class="carousel slide p-5 d-none d-md-block " data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="row">
+            <div class="col-4">
+                <i class="fas fa-film fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+              </div>
+          <div class="col-4">
+            <i class="fas fa-headphones fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+          </div>
+          <div class="col-4">
+            <i class="fas fa-utensils fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+ 
+
+      <div class="carousel-item">
+        <div class="row">
+            <div class="col-4">
+                <i class="fas fa-camera-retro fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+              </div>
+          <div class="col-4">
+            <i class="fas fa-futbol fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+          </div>
+          <div class="col-4">
+            <i class="fab fa-js-square fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div> 
+</div>
 
 
-<button onclick="cambio()">Cambiar fondo</button>
-<button onclick="retorno()">Restaurar</button>
+<!--Seccion de información personal-->
+
+<!--Seccion mis trabajos-->
+
+<!--Formulario TYPEFORM-->
+
+<div class="typeform-widget" data-url="https://form.typeform.com/to/RF9udH4S" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=RF9udH4S&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+
+<!--FOORTER-->
 
 
+    <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS 4.2.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--Mi script-->
     <script src="assets/js/index.js"></script>
 </body>
 </html>

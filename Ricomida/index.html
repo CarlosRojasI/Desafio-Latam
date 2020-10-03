@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Rinconada</title>
+    <title>Ricomida</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 <div class="container mx-0"></div>
 <!-- navbar  -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#"><p>Ricomida</p></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
 
 <!-- seccion principal -->
 
-    <div class="row p-4">
+    <div class="row p-5">
         <div class="col-12 col-md-6">
             <img src="assets/img/principal.jpg" alt="" srcset="">
         </div>
@@ -73,65 +73,36 @@
 <!-- Carrusel -->
 
 
-<section class="container-box mx-0 p-4 d-none d-lg-block d-print-block"> 
+<div id="carouselExampleIndicators" class="carousel slide p-5 d-none d-md-block " data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
     <div class="carousel-inner">
 
-        <div class="carousel-item active">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-1.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-2.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-3.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-4.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-            </div>
-            <!--.row-->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-1.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-2.png"Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-3.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-4.png" alt="Second slide"></div>
         </div>
-        <!--.item-->
 
-        <div class="carousel-item">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-5.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-6.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-7.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <img src="assets/img/slider-8.png" alt="Image" style="max-width:100%;">
-                    </a>
-                </div>
-            </div>
-            <!--.row-->
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-5.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-6.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-7.png" alt="Second slide"></div>
+          <div class="col"> <img class="d-block w-100" src="assets/img/slider-8.png" alt="Second slide"></div>
         </div>
-        <!--.item-->
 
+      </div>
     </div>
-</section>
+
+  </div>  
+
 
 <!--  recetas  -->
 
@@ -174,77 +145,94 @@
 
 <!-- Modal y  Cartas en recetario -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">PANQUEQUES CON MANJAR Y CREMA</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+
+<section class="container-fluid my-5 p-6 bg-light" id="work">
+    <h2 class="display-5 text-center text-dark mb-3">RECETAS RELACIONADAS</h2>
+    <div class="card-deck p-5">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/recipe-card-1.png" alt="Panqueques">
+        <div class="card-body" data-toggle="modal" data-target="#asado">
+          <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo iure sint.</p>
         </div>
-        <div class="modal-body">
-            <div class="col-12 col-md-4 p-3">
-                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
-                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/recipe-card-2.png" alt="Tiramisu">
+        <div class="card-body">
+          <h5 class="card-title">TIRAMISU</h5>
+          <p class="card-text" data-toggle="modal" data-target="#papas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt a culpa doloremque voluptatem dicta nam. Maxime ipsum.</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/recipe-card-3.png" alt="Plateada">
+        <div class="card-body" data-toggle="modal" data-target="#salmones">
+          <h5 class="card-title">PLATEADA</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati facere quibusdam, autem neque ducimus.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-
-    <div class="container">
-    
-        <hr>
-
-        <h2>RECETAS RELACIONADAS</h1>
-        <div class="row mx-0 p-5 W-25">
-        
-
-
-            <div class="col-12 col-md-4 p-3">
-                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
-                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
-                    </div>
-                </div>
+    <div class="modal fade" id="asado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Panqueques con manjar y crema</h5>
             </div>
+            <div class="modal-body">
+            <img class="img-fluid mb-3" src="assets/img/recipe-card-1.png" alt="Card image cap">
 
-            <div class="col-12 col-md-4 p-3">
-                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
-                    <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">TIRAMISU</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit  </p>
-                    </div>
-                </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </div>
-
-
-            <div class="col-12 col-md-4 p-3">
-                <div class="card m-auto" data-toggle="modal" data-target="#exampleModal">
-                    <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">PLATEADA</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fugit   </p>
-                    </div>
-                </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
-
-
-
+        </div>
         </div>
     </div>
+
+    <div class="modal fade" id="papas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">TIRAMISU</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+            </div>
+            <div class="modal-body">
+            <img class="img-fluid mb-3" src="assets/img/recipe-card-2.png" alt="Card image cap">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborum.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="salmones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">PLATEADA</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+            </div>
+            <div class="modal-body">
+            <img class="img-fluid mb-3" src="assets/img/recipe-card-3.png" alt="Card image cap">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur laborum.</p>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
 
 </div>  
 
@@ -253,7 +241,7 @@
 <div class="contacto">
 <h4>SUSCRIBETE EN NUESTRO NEWSLETTER</h4>
     <P>y obtén las mejores recetas que tenemos en <span> Ricomida</span></P>
-    <div class="typeform-widget" data-url="https://form.typeform.com/to/wiH5tiD6" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> <a href="https://admin.typeform.com/signup?utm_campaign=wiH5tiD6&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank"></a> </div>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/wiH5tiD6" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> <a href="https://admin.typeform.com/signup?utm_campaign=wiH5tiD6&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank"></a> </div>
 
 
 </div>
