@@ -3,25 +3,30 @@ body {
   }
   
   header {
-    background-image: url('/PruebasEnJS/assets/img/Punta_de_Tralca.jpg');
+    background-image: url('/PruebasEnJS/assets/img/serena.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    padding-bottom: 10rem;
+    background-position: center;
+    padding: 0px;
     height: 537px;
   }
 
-  .hero p{
-      padding: 0px;
-      color: black;
-      font-weight: bold;
-      font-size: 30px;
-      margin-top: 0;
-      border: none;
+
+  h4{
+      color: orangered;
+      font-size: 20px;
+      margin-top: 225px;
   }
 
+  span.hero-title{
+      font-weight: bold;
+      color: orangered;
+      font-size: 75px;
+  }
+
+
   hr{
-      border: solid black 1px;
+      border: solid orangered 1px;
       width: 75%;
   }
 
@@ -29,8 +34,10 @@ body {
     padding-top: 18%;
 }
 
+
+/* Carrusel */
+
 #carrusel{
-    background-color: red;
     padding: 30px;
 
 }
@@ -47,17 +54,18 @@ body {
 }
 
 .carrusel-caja{
-    background: greenyellow;
     width: 100%;
     padding-top: 5px;
     padding-left: 100px;
+    border: solid 3px ;
+    border-radius: 5px;
 }
 
 .carrusel-caja h3{
     text-align: center;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: rgb(18, 131, 18);
+    color: rgb(209, 98, 34);
     font-size: 35px;
 }
 
