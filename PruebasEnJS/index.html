@@ -1,259 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pruebas de JavaScript</title>
+        <title>Pruebas de JavaScript</title>
 
-    <!--CSS de Bootstrap 4.2.1-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!--CSS de Bootstrap 4.2.1-->
+        <link
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <!--Google Fonts-->
+        <link
+        href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
-    <!--Personalizados-->
-    <link rel="stylesheet" href="assets/css/estilos.css">
-</head>
-<body>
+        <!--Font Awesome-->
+        <link
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-<!--Barra de Navegacion NAVBAR manejada por BOOPSTRAP 4.2.1-->
+        <!--Personalizados-->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+    <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"> <img src="assets/img/..." alt=""> </a>
+        <!--Barra de Navegacion NAVBAR manejada por BOOPSTRAP 4.2.1-->
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/..." alt="">
+                </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Acerca de mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#exper">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Trabajos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<!--HERO seccion principal-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Acerca de mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exper">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<header class="hero text-lig text-center my-5">
-    <div class="container-hero">
-      <br>
-      <br>
-      <h4 class="display-4 my-5 p-1">Yo soy  </h4>
-      <hr>
-      <span class="hero-title">Carlos</span>
-    </div>
-  </header>
+        <!--HERO seccion principal-->
+
+        <header class="hero text-center vh-20 vw-100">
+            <div class="container-hero">
+                <br>
+                <br>
+                <h4 class="display-4 p-1">Yo soy
+                </h4>
+                <hr>
+                <span class="hero-title">Carlos</span>
+            </div>
+        </header>
+
+        <!--Carrusel de hobbies-->
+        <div class="carrusel-caja d-none d-md-block">
+            <h3>MIS HOBBIES</h3>
+            <div id="carouselExampleIndicators" class="carousel slide p-5  " data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fas fa-film fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-headphones fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-utensils fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="fas fa-camera-retro fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-futbol fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fab fa-js fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            </div>
 
-<!--Carrusel de hobbies-->
-<div class="carrusel-caja d-none d-md-block">
-    <h3>MIS HOBBIES</h3>
-<div id="carouselExampleIndicators" class="carousel slide p-5  " data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li class="indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
+                        </div>
 
-      <div class="carousel-item active">
-        <div class="row">
-            <div class="col-4">
-                <i class="fas fa-film fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-              </div>
-          <div class="col-4">
-            <i class="fas fa-headphones fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-          </div>
-          <div class="col-4">
-            <i class="fas fa-utensils fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-          </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
 
-      </div>
+        <!--Seccion de información personal (texto)-->
 
- 
+        <section class="info-personal d-none d-md-block">
+            <p>Soy un profesional dedicado y activo, me he desarrollado en el area de la informática y servicios, tengo mas de 20 años de experiencia en areas como soporte, coordinación y supervisión de servicios, actualmente desarrollador Fullstack de JavaScript.
+            </p>
 
-      <div class="carousel-item">
-        <div class="row">
-            <div class="col-4">
-                <i class="fas fa-camera-retro fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-              </div>
-          <div class="col-4">
-            <i class="fas fa-futbol fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+            <div class="row">
+                <div id="personal">
+                    <div class="personal col-12 col-md-6">
+                        <div class="estudios">
+                            <p>
+                                Casado y con dos hijas, vivo en Santiago de Chile, me gusta el deporte la musica sobre todo de los años 80, el cine de tipo fantasia y accion.</p>
+                            <p>
+                                Soy titulado de eletrónica con mención en microprocesadores, titulo obtenido en el Instituto Gamma de eletrónica.
+                            </p>
+                            <p>Tambien complete un diplomado en redes de la computación, en el Instituto AIEP, dependiente de la Universidad Andres Bello.</p>
+                        </div>
+                    </div>
+
+                    <div class="personal col-12 col-md-6">
+                        <div class="estudios"></div>
+                        <p>Desarrollador Web desde el año 2020, con especialidad en JavaScript y NodeJs, con conocimiestos de SQL Server, Angular, VueJS.</p>
+                        <p>Titulado de la carrera Fullstack de javaScript por la academia de Talento Digital</p>
+                        <p>Con proyectos desarrolados a empresas como Cupon, Olivia Ros, Meet&coffee, entre los mas destacados.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Seccion de información  (Mi experiencia)-->
+
+            <section class="experiencia">
+                <div class="experiencia-div">
+                    <p class="experiencia-div-parrafo">MI EXPERIENCIA</p>
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <i class="fab fa-js-square fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            <h5>Desarrollador JavaScript</h5>
+                            <span class="exp-ano">2020 - 2021</span>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <i class="fab fa-angular fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
+                            <h5>Angular</h5>
+                            <span class="exp-ano">2021 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia-div"></div>
+
+            </section>
+
+            <!--Seccion mis trabajos en CARD -->
+
+            <div class="card-box w-100 mx-0 p-5 bg-success">
+            <section class="container p-3 bg-success" id="work">
+
+                <div class="row card-deck">
+                    <div class="card col-12 col-md-4">
+                        <img class="card-img-top" src="assets/img/meet_coffe.PNG" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Meet & Coffee</h5>
+                            <p class="card-text">Mi primera página Web en la academía desafio Latam, esto enseña estructura HTML y CSS.</p>
+                            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#meet">Ver más</button>
+                        </div>
+                    </div>
+
+                    <div class="card card col-12 col-md-4">
+                        <img class="card-img-top" src="assets/img/cuppon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuppon</h5>
+                            <p class="card-text">Simulación de un servicio de ventas y arriendos online, uso de grillas</p>
+                            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#cupon">Ver más</button>
+                        </div>
+                    </div>
+
+                    <div class="card card col-12 col-md-4">
+                        <img class="card-img-top" src="assets/img/iguana.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Iguana page</h5>
+                            <p class="card-text">Desafio opcional del modulo CSS, donde se debe de mostrar habilidades de uso de HTML y CSS.</p>
+                            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#iguana">Ver más</button>
+                        </div>
+                    </div>
+
+                    <div class="row p-3">
+
+                        <div class="card col-12 col-md-4">
+                            <img class="card-img-top" src="assets/img/suricata.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Suricata</h5>
+                                <p class="card-text">Desafio opcional que trabaja con grillas, paso anterior a Boopstrap.</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#suricata">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card card col-12 col-md-4">
+                            <img class="card-img-top" src="assets/img/oliviaros.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Olivia Ros</h5>
+                                <p class="card-text">Un sitio 100% operativo y responsivo, los primeros pasos a javaScript
+                                </p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#olivia">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="card card col-12 col-md-4">
+                            <img class="card-img-top" src="assets/img/ricommida.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Ricomida</h5>
+                                <p class="card-text">Un sistema resposivo que permite el ingreso de Boopstrap y la metodología Grid.</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#ricomida">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal fade" id="meet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Meet & Coffee</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/meet_coffe.PNG" alt="Meet & Coffee">
+                            <p>
+                                Mi primer pagina Web, un cafe con HTML y CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="cupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Grupon</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/cuppon.png" alt="Cuppon">
+                            <p>Un sistema similar a GRUPON, para compra y reservas online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="iguana" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Iguana Page</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/iguana.png" alt="Card image cap">
+
+                            <p>Desafio de Iguana page.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="suricata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Suricata</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/suricata.png" alt="Card image cap">
+                            <p>Desafio de Suricata page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="olivia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Olivia Ros</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/oliviaros.png" alt="Card image cap">
+                            <p>Desafio de proyecto completo de página.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ricomida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/img/ricommida.png" alt="Card image cap">
+                            <p>Desafio de Ricomida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
-          <div class="col-4">
-            <i class="fab fa-js fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-          </div>
 
-        </div>
+            <!--Formulario TYPEFORM-->
 
-      </div>
-    </div>
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/RF9udH4S" style="width: 100%; height: 500px;"></div>
+            <script>
+                (function () {
+                    var qs,
+                        js,
+                        q,
+                        s,
+                        d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/";
+                    if (! gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
+            <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
+                powered by
+                <a href="https://admin.typeform.com/signup?utm_campaign=RF9udH4S&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a>
+            </div>
 
-  </div> 
-</div>
+            <!--FOORTER-->
 
-<!--Seccion de información personal (texto)-->
+            <footer>
+                <div class="row">
+                    <div class="footer-redes col-12 col-md-6">
+                        <p>CARLOS ROJAS</p>
+                    </div>
+                    <div class="footer-redes col-12 col-md-6 d-inline-block">
+                        <div class="row p-2">
+                            <div class="ico col-3">
+                                <i class="fab fa-github-square fa-4x"></i>
+                            </div>
+                            <div class="ico col-3">
+                                <i class="fab fa-linkedin fa-4x"></i>
+                            </div>
+                            <div class="ico col-3">
+                                <i class="fab fa-facebook-square fa-4x"></i>
+                            </div>
+                            <div class="ico col-3">
+                                <i class="fab fa-twitter-square fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
 
-<section class="info-personal d-none d-md-block">
-  <p>Soy un profesional dedicado y activo, me he desarrollado en el area de la informática y servicios, tengo mas de 20 años de experiencia en areas como soporte, coordinación y supervisión de servicios, actualmente desarrollador Fullstack de JavaScript. </p>
- 
-  <div class="row">
-    <div id="personal">    
-        <div class="personal col-12 col-md-6">
-          <div class="estudios">
-            <p>
-                Casado y con dos hijas, vivo en Santiago de Chile, me gusta el deporte la musica sobre todo de los años 80, el cine de tipo fantasia y accion.</p>
-                <p>
-                  Soy titulado de eletrónica con mención en microprocesadores, titulo obtenido en el Instituto Gamma de eletrónica.
-                </p>
-                <p>Tambien complete un diplomado en redes de la computación, en el Instituto AIEP, dependiente de la Universidad Andres Bello.</p>
-          </div>
-        </div>
-
-        <div class="personal col-12 col-md-6">
-          <div class="estudios"></div>
-            <p>Desarrollador Web desde el año 2020, con especialidad en JavaScript y NodeJs, con conocimiestos de SQL Server, Angular, VueJS.</p>
-            <p>Titulado de la carrera Fullstack de javaScript por la academia de Talento Digital</p>
-            <p>Con proyectos desarrolados a empresas como Cupon, Olivia Ros, Meet&coffee, entre los mas destacados.</p>
-        </div>
-    </div>
-</section>
-
-<!--Seccion de información  (Mi experiencia)-->
-
-<section class="experiencia">
-<div class="experiencia-div">
-  <p class="experiencia-div-parrafo">MI EXPERIENCIA</p>
-  <hr>
-  <div class="row">
-    
-    <div class="col-12 col-md-6">
-      <i class="fab fa-js-square fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-      <h5>Desarrollador JavaScript</h5>
-      <span class="exp-ano">2020 - 2021</span>
-    </div>
-    <div class="col-12 col-md-6">
-      <i class="fab fa-angular fa-5x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="CodePen"></i>
-      <h5>Angular</h5>
-      <span class="exp-ano">2021</span>
-    </div>
-  </div>
-</div>
-<div class="experiencia-div"></div>
-
-</section>
+                </div>
+            </footer>
 
 
-<!--Seccion mis trabajos en CARD -->
+            <!--jQuery 3.3.1 sin slim-->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-<section class="container p-5 bg-light" id="work">
+            <!--Popper JS 1.14.3-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-  <div class="row card-deck">
-     <div class="card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/meet_coffe.PNG" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Meet & Coffe</h5>
-         <p class="card-text">Trabajo para un Cafe y sus servicios.</p>
-         </div>
-     </div>
-     <div class="card card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/cuppon.png" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Cuppon</h5>
-         <p class="card-text">servicio de ventas por eventos</p>
-         </div>
-     </div>
-     <div class="card card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/iguana.png" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Iguana Page</h5>
-         <p class="card-text">Página para vercomportamiento de CSS .</p>
-         </div>
-     </div>
- <div class="row p-4">      
+            <!--Bootstrap JS 4.2.1-->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-         <div class="card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/suricata.png" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Suricata</h5>
-         <p class="card-text">Pagina para ver comportamiento de CSS.</p>
-         </div>
-     </div>
-     <div class="card card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/oliviaros.png" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Olivia Ros</h5>
-         <p class="card-text">Un sitio completo y resposive</p>
-         </div>
-     </div>
-     <div class="card card col-12 col-md-4">
-         <img class="card-img-top" src="assets/img/ricommida.png" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Ricomida</h5>
-         <p class="card-text">sitio de comida para un proyecto.</p>
-         </div>
-     </div>
-  </div>
-</div>
-</section>
-
-
-
-
-<!--Formulario TYPEFORM-->
-
-<div class="typeform-widget" data-url="https://form.typeform.com/to/RF9udH4S" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=RF9udH4S&utm_source=typeform.com-01EKJKAYY6BDZXBB1D7K7M9AF0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
-
-<!--FOORTER-->
-
-<footer>
-  <div class="row">
-      <div class="footer-redes col-12 col-md-6">
-          <p>CARLOS ROJAS</p>
-      </div>
-  <div class="footer-redes col-12 col-md-6 d-inline-block">
-      <div class="row p-2">
-      <div class="ico col-3"><i class="fab fa-github-square fa-4x"></i></div>
-      <div class="ico col-3"><i class="fab fa-linkedin fa-4x"></i></div>
-      <div class="ico col-3"> <i class="fab fa-facebook-square fa-4x"></i></div>
-      <div class="ico col-3"><i class="fab fa-twitter-square fa-4x"></i></div>
-  </div>
-  </div>
-
-  </div>
-</footer>
-
-
-
-    <!--jQuery 3.3.1 sin slim-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <!--Popper JS 1.14.3-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <!--Bootstrap JS 4.2.1-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <!--Mi script-->
-    <script src="assets/js/index.js"></script>
-</body>
+            <!--Mi script-->
+            <script src="assets/js/index.js"></script>
+        </body>
+    </body>
 </html>

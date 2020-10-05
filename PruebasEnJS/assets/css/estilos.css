@@ -30,9 +30,6 @@ body {
       width: 75%;
   }
 
-.container-hero{
-    padding-top: 18%;
-}
 
 
 /* Carrusel */
@@ -126,6 +123,22 @@ body {
     font-weight: normal;
     color: red;
     padding-bottom: 10px;
+}
+
+
+/* card*/
+.card{
+    padding: 15px;
+}
+
+.card button{
+    border: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.card button:hover{
+    background: orangered;
 }
 
 /*  footer */
