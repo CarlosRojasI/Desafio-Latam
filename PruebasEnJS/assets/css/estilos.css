@@ -95,5 +95,39 @@ body {
      
 
 
+/*  Mi experiencia*/
+
+.experiencia{
+    text-align: center;
+    padding-top: 20px;
+    background: orange;
+    padding-bottom: 20px;
+}
+
+.experiencia p{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.experiencia h5{
+    color: red;
+}
+
+.fa-angular{
+    color: red;
+}
+
+.fa-js-square{
+    color: red;
+}
+
+.exp-ano{
+    font-weight: normal;
+    color: red;
+    padding-bottom: 10px;
+}
+
+
 
 
