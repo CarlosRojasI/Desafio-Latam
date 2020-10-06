@@ -18,8 +18,9 @@ header {
     background-size: cover;
     background-position: center;
     padding: 0px;
-    height: 537px;
+    height: 650px;
 }
+
 
 
 .hero{
@@ -30,6 +31,12 @@ header {
     position: absolute;
     bottom: 14%;
     text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 0;
+    display: block;
 }
 
 h4{
@@ -221,7 +228,6 @@ h2{
 
 footer{
     background: black;
-
 }
 
 .footer-redes p{
@@ -232,50 +238,12 @@ footer{
     padding: 10px 0 0 0;
 }
 
-
-
 footer .fab {
     width: 20px;
     color: white;
 }
 
-
-
-@media (min-width: 0px) {
-
-    header {
-        background-image: url('/PruebasEnJS/assets/img/serena.JPG');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 0px;
-        height: 650px;
-    }
-
-    .container-hero{
-        margin: auto;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-        padding: 0;
-        display: block;
-    }
-
-}
-
-
-
 @media (min-width: 575px) {
-
-
-    header {
-        background-image: url('/PruebasEnJS/assets/img/serena.JPG');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 0px;
-        height: 680px;
-    }
 
     .container-hero{
         margin: auto;
