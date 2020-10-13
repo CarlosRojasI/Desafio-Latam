@@ -141,7 +141,7 @@ function exito () {
     };
     function validar (nombre,asunto,mensaje) {
         let pasamosLaValidacion = true ;
-        let validacion = /[a-zA-Z]/g ;
+        let validacion = /^[a-zA-Z ]+$/ ;
 
         if (validacion.test(nombre) == false) {
             document.querySelector( ".errorNombre" ).innerHTML = "Ingrese un nombre válido."
