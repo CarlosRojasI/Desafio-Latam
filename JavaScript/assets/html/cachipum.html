@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachipum</title>
+</head>
+<body>
+
+<script>
+
+
+// var ngame = +prompt('Favor ingrese la cantidad de veces que va a jugar')
+var ngame = +prompt('ingrese un numero de juegos')
+let wuser = 0
+let wmaquina = 0
+
+for (y = 0; y < ngame; y ++) {
+
+    var inputUser = + prompt('Favor ingrese el numero de su opcion entre: (1) Piedra, (2) Papel o (3) Tireta')
+
+    console.log(inputUser)
+
+    variable = (inputUser)
+
+    switch (variable) {
+        case 1: inputUser = 'piedra'
+            console.log(inputUser) // instrucciones
+            alert(inputUser)
+            break;
+        case 2: inputUser = 'papel'
+            console.log(inputUser) // instrucciones
+            alert(inputUser)
+            break;
+        case 3: inputUser = 'tijera'
+            console.log(inputUser) // instrucciones
+            alert(inputUser)
+            break
+        default:
+            console.log('El valor de usuario no existe') // instrucciones
+            break;
+    }
+    console.log(inputUser)
+    alert('Ya cerre mi apuesta')
+
+
+    let maquina = Math.floor(Math.random() * (4 - 1)) + 1; // me guarda el numero de maquina
+
+    variable2 = maquina
+
+    switch (variable2) {
+        case 1: maquina = 'piedra'
+            console.log(maquina) // instrucciones
+            alert(maquina)
+            break;
+        case 2: maquina = 'papel'
+            console.log(maquina) // instrucciones
+            alert(maquina)
+            break;
+        case 3: maquina = 'tijera'
+            console.log(maquina) // instrucciones
+            alert(maquina)
+            break
+        default:
+            console.log('El valor de maquina no existe') // instrucciones
+            break;
+    }
+    alert('La maquina ya puso su apuesta')
+
+    alert('el usuario dice ' + inputUser)
+    alert('La maquina dice ' + maquina)
+
+    alert('Ahora se define quien gana este Match')
+
+    console.log(inputUser)
+    console.log(maquina)
+
+
+    if (inputUser == 'piedra' && maquina == 'piedra') {
+        console.log('El resultado es empate, ambos seleccionaron piedra')
+        alert('El resultado es empate, ambos seleccionaron piedra')
+    } else if (inputUser == 'papel' && maquina == 'papel') {
+        console.log('El resultado es empate, ambos seleccionaron papel')
+        alert('El resultado es empate, ambos seleccionaron papel')
+    } else if (inputUser == 'tijera' && maquina == 'tijera') {
+        console.log('El resultado es empate, ambos seleccionaron Tijera')
+        alert('El resultado es empate, ambos seleccionaron Tijera')
+    } else if (inputUser == 'piedra' && maquina == 'papel') {
+        console.log('El resultado es gana la Maquina')
+        alert('El resultado es gana la Maquina')
+        wmaquina ++
+    } else if (inputUser == 'piedra' && maquina == 'tijera') {
+        console.log('El resultado es que GANASTE!!!!')
+        alert('El resultado es que GANASTE!!!!')
+        wuser ++
+    } else if (inputUser == 'tijeta' && maquina == 'papel') {
+        console.log('El resultado es que GANASTE!!!!')
+        alert('El resultado es que GANASTE!!!!')
+        wuser ++
+    } else if (inputUser == 'tijera' && maquina == 'piedra') {
+        console.log('El resultado es gana la maquina')
+        alert('El resultado es gana la maquina')
+        wmaquina ++
+    } else if (inputUser == 'papel' && maquina == 'piedra') {
+        console.log('El resultado es que GANASTE!!!')
+        alert('El resultado es que GANASTE!!!')
+        wuser ++
+    } else if (inputUser == 'papel' && maquina == 'tijeras') {
+        console.log('El resultado es gana la maquina')
+        alert('El resultado es gana la maquina')
+        wmaquina ++
+    }
+
+    alert('Fin de esta partida')
+
+    console.log(maquina)
+    console.log(inputUser)
+}
+
+console.log(wuser)
+console.log(wmaquina)
+
+if (wuser > wmaquina) {
+    alert('Ganaste por que tus puntos fueron ' + wuser + 'La maquina obtuvo ' + wmaquina)
+} else if (wuser == wmaquina) {
+    alert('Han empatado ' + wmaquina)
+} else {
+    alert('La maquina gano ' + wmaquina + 'el jugador obtuvo ' + wuser)
+}
+
+
+/*
+if (wuser > wmaquina){
+    alert('usuario gano')
+}else {
+    alert('La Maquina Gano')
+}
+*/
+
+// con esta etapa llamo a la funsion y parto el juego
+
+/*
+
+for (let a = 0; a<ngame; a++){
+    console.log('jugada ' + a)
+
+
+console.log('juego piedra,papel o tijera')
+}
+*/
+
+</script>
+
+
+
+    
+</body>
+</html>

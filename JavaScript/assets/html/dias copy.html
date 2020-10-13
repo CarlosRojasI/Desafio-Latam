@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to round the number 1.6 downward to its nearest integer.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+function calculo(m1) {
+    const m = 30
+    const y = 365
+    const w = 7
+
+    let years = Math.trunc(m1 / y)
+    let yd = y * years
+    let months = Math.trunc((m1 - yd)/m)
+    let md = m * months
+    let ws = Math.trunc((m1 - yd - md) / w)
+    let wss = w * ws
+    let d = Math.trunc(m1 - ys - md - wss)
+    alert('El valor ingresado es ' +years + " años, " + months + "meses, "+ ws + "semanas, " + d "dias" )
+}
+
+function ingreso(){
+    let calc = +prompt("Ingrese una cifra")
+    calculo(calc)
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+//////////////////////////////////////////////
+///////////  Instrucciones IF ////////////////
+/////////////////////////////////////////////
+
+/*
+
+var num1 = +prompt("Ingresa el primer número: ")
+var num2 = +prompt("Ingresa el segundo número: ")
+
+if(num1==num2){
+    console.log('Esto es correcto')
+}
+    console.log('Sali del IF ')
+
+*/
+
+// notas
+/*
+
+var num1 = +prompt("Ingresa tu nota: ")
+var num2 = +prompt("Ingresa tu nota: ")
+
+if (num1 < num2){
+    console.log('has reprobado');
+} else if (num1 == num2){
+    console.log('estas adentro con 5')
+} else if (num1 == num2){
+    console.log('tienes un 6')
+} else if (num1 == num2){
+    console.log('estas con un 7')
+}else {
+    console.log('te falta la nota')
+}
+
+*/
+
+/*
+
+var num1 = +prompt("Ingresa el primer número: ")
+var num2 = +prompt("Ingrese el segundo número: ")
+
+function sumar(){
+        if (num1<num2){
+        console.log("El número 1 no es mayor que numero2")
+        }else if (num2>=0){
+        console.log("El número 2 es positivo ok")
+        }else if (num1<0){
+        console.log("El número 1 es negativo mal")
+        }
+        return sumar
+    }
+        console.log(sumar)
+
+*/
+
+/*
+var num1 = +prompt("Ingresa el primer número: ")
+var num2 = +prompt("Ingrese el segundo número: ")
+
+ function juegos () {
+     alert('comienza el juego');
+     sumar();
+ };
+
+function sumar(){
+        if (num1<num2){
+        console.log("El número 1 no es mayor que numero2")
+        }else if (num2>=0){
+        console.log("El número 2 es positivo ok")
+        }else if (num1<0){
+        console.log("El número 1 es negativo mal")
+        }
+        return sumar
+    };
+        alert(sumar)
+        console.log(sumar)
+*/
+
+//////////////////////////////////////////////
+//////// Dias de la semana con SWITCH  ///////
+//////////////////////////////////////////////
+/*
+var num = +prompt('favor ingrese un numero del 1 al 7')
+
+console.log(num)
+
+variable = num
+switch (variable) {
+    case 1:
+            console.log('Lunes')// instrucciones
+    break;
+    case 2:
+            console.log('Martes')// instrucciones
+    break;
+    case 3:
+            console.log('Miercoles')// instrucciones
+    break
+    case 4:
+            console.log('Jueves')// instrucciones
+    break;
+    case 5:
+            console.log('Viernes')// instrucciones
+    break;
+    case 6:
+    console.log('sabado')// instrucciones
+    break
+    case 7:
+            console.log('Domingo')// instrucciones
+    break
+    default:
+            console.log('El dia no existe')// instrucciones
+    break;
+    }
+console.log('estoy fuera del switch')
+
+*/
+// Los meses del año
+/*
+var num = +prompt('favor ingrese un numero del 1 al 12')
+
+        console.log(num)
+
+        variable = num
+        switch (variable) {
+        case 1:
+                console.log('enero')// instrucciones
+        break;
+        case 2:
+                console.log('Febrero')// instrucciones
+        break;
+        case 3:
+                console.log('Marzo')// instrucciones
+        break
+        case 4:
+                console.log('abril')// instrucciones
+        break;
+        case 5:
+                console.log('mayo')// instrucciones
+        break;
+        case 6:
+        console.log('junio')// instrucciones
+        break
+        case 7:
+                console.log('julio')// instrucciones
+        break
+        case 8:
+                console.log('agosto')// instrucciones
+        break;
+        case 9:
+                console.log('septiembre')// instrucciones
+        break;
+        case 10:
+                console.log('octubre')// instrucciones
+        break
+        case 11:
+                console.log('noviembre')// instrucciones
+        break;
+        case 12:
+                console.log('diciembre')// instrucciones
+        break;
+        default:
+                console.log('El numero ingresado esta erroneo')// instrucciones
+        break;
+        }
+        console.log('estoy fuera del switch de los meses')
+    }
+
+
+
+// var ngame = +prompt('Favor ingrese la cantidad de veces que va a jugar')
+var inputUser = +prompt('Favor ingrese el numero de su opcion entre: (1) Piedra, (2) Papel o (3) Tijeta')
+
+// console.log(ngame)
+console.log(inputUser)
+
+
+function usuario(inputUser) {
+        if (inputUser == 1) {
+            inputUser = 'piedra';
+        } else if (inputUser == 2) {
+            inputUser = 'papel';
+        } else if (inputUser == 3) {
+            inputUser = 'tijera';
+        }
+        return usuario
+        }
+        console.log(inputUser)
+        console.log(usuario)
+*/
+/*
+
+let maquina = Math.floor(Math.random() * (4 - 1)) + 1; // me guarda el numero de maquina
+    console.log(maquina)
+
+    function equipo(maquina) {
+        if (maquina == 1) {
+            maquina = 'piedra'
+        } else if (maquina == 2) {
+            maquina = 'papel'
+        } else if (maquina == 3) {
+            maquina = 'tijera'
+        }
+        return maquina
+    }
+
+    console.log(maquina)
+
+
+
+
+        function jugadas(maquina, inputUser){
+        if (inputUser == 'piedra' && maquina == 'piedra') {
+            console.log('El resultado es empate, ambos seleccionaron piedra')
+        }else if (inputUser == 'papel' && maquina == 'papel') {
+            console.log('El resultado es empate, ambos seleccionaron papel')
+        }else if (inputUser == 'tijera' && maquina == 'tijera') {
+            console.log('El resultado es empate, ambos seleccionaron Tijera') 
+        }else if (inputUser == 'piedra' && maquina == 'papel') {
+            console.log('El resultado es gana la Maquina') 
+        }else if (inputUser == 'piedra' && maquina == 'tijera') {
+            console.log('El resultado es que GANASTE!!!!') 
+        }else if (inputUser == 'tijeta' && maquina == 'papel') {
+            console.log('El resultado es que GANASTE!!!!') 
+        }else if (inputUser == 'tijera' && maquina == 'piedra') {
+        console.log('El resultado es gana la maquina')
+        }else if (inputUser == 'papel' && maquina == 'piedra') {
+            console.log('El resultado es que GANASTE!!!') 
+        }else if (inputUser == 'papel' && maquina == 'tijeras')
+            console.log('Perdiste')
+    }
+
+    console.log(maquina)
+    console.log(inputUser)
+
+
+
+*/
+
+
+
+
+///////////////////////////////////
+///////  FUNSIONES  //////////////
+/////////////////////////////////
+
+/*
+
+var a=3, b=4, c=5, d=6, e=3, f=5;
+var suma;
+
+// sin funsion
+
+suma = a+b
+console.log(suma)
+
+suma=c+d
+console.log(suma)
+
+suma=e+f
+console.log(suma)
+
+// con funsiones
+
+sumarNumeros(a,b,c);
+sumarNumeros(c,d,e);
+sumarNumeros(e,f,a);
+
+function sumarNumeros (numero1,numero2){
+    var sumaTotal=numero1+numero2;
+    console.log(sumaTotal);
+}
+
+*/
+
+
+
+/////////////////////////////////////////
+/////////////  for      ////////////////
+////////////////////////////////////////
+/*
+
+var ngame = +prompt('ingrese un numero')
+
+for (let a = 0; a<ngame; a++){
+    console.log('jugada ' + a)
+
+console.log('juego piedra,papel o tijera')
+}
+
+*/
+/////////////////////////////////////////
+/////////////  Do While ////////////////
+////////////////////////////////////////
+
+/*
+
+var user = +prompt('ingrese una opcion: 1: piedra, 2 papel o 3 tijera ')
+
+variable = (user)
+
+switch (variable) {
+    case 1:
+            user = 'piedra'
+            console.log('user')// instrucciones
+            alert(user)
+    break;
+    case 2:
+            user = 'papel'
+            console.log('user')// instrucciones
+            alert(user)
+    break;
+    case 3:
+            user = 'tijera'
+            console.log('user')// instrucciones
+            alert(user)
+    break
+    default:
+            console.log('El valor de usuario no existe')// instrucciones
+    break;
+    }
+    console.log(user)
+    alert('Estoy fuera')
+
+
+    var maquina = +prompt('ingrese una segunda opcion: 1: piedra, 2 papel o 3 tijera ')
+
+    variable2 = maquina
+
+    switch (variable2) {
+    case 1:
+            maquina = 'piedra'
+            console.log('maquina')// instrucciones
+            alert(maquina)
+    break;
+    case 2:
+            maquina = 'papel'
+            console.log('maquina')// instrucciones
+            alert(maquina)
+    break;
+    case 3:
+            maquina = 'tijera'
+            console.log('maquina')// instrucciones
+            alert(maquina)
+    break
+    default:
+            console.log('El valor de maquina no existe')// instrucciones
+    break;
+    }
+    console.log(maquina)
+    console.log(user)
+    alert('Estoy fuera de dos')
+     alert(maquina)
+     alert(user)
+
+ */
+
+</script>
+
+
+</body>
+</html>

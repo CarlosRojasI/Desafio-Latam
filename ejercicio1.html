@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div style="width: 40%;margin: 0 auto">
+            <h2>
+                Escríbenos !!!
+            </h2>
+            <div class="resultado" style="color:green;font-style: italic">
+            </div>
+            <form id="formulario">
+                <div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label>
+                            Nombre completo
+                        </label>
+                        <input id="nombre" type="text">
+                        <p class="errorNombre" style="color:red;font-style: italic;"></p>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label>
+                            Asunto
+                        </label>
+                        <input id="asunto" type="text">
+                        <p class="errorAsunto" style="color:red;font-style: italic;"></p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <label>
+                        Mensaje
+                    </label>
+                    <textarea id="mensaje"></textarea>
+                    <p class="errorMensaje" style="color:red;font-style: italic;"></p>
+                </div>
+                <div>
+                    <button id="botton" type="submit">
+                        Envíar mensaje
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+
+// Desarrollar un código para validar un formulario de contacto utilizando el evento submit y las expresiones regulares que
+// permitan el ingreso de caracteres desde la “A-a” hasta la “Z-z” mediante el método test() de JavaScript, mostrando un 
+// mensaje de error y/o éxito cuando corresponda. Es decir, el usuario deberá obligatoriamente ingresar datos en el
+//  formulario y que estos solo sean caracteres alfabéticos de la “a” hasta la “z” para poder enviar la información. 
+  
+
+
+let formulario = document.getElementById( "formulario" );
+    formulario.addEventListener( "submit" , function ( event ) {
+    event.preventDefault();
+
+    limpiarErrores();
+
+    let nombre = document.getElementById("nombre").value;
+    let asunto = document.getElementById("asunto").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let resultado = validar(nombre,asunto,mensaje);
+
+    if (resultado == true ) {
+        exito();
+    };
+});
+
+
+    function limpiarErrores () {
+        document.querySelector(".resultado").innerHTML = "" ;
+        document.querySelector(".errorNombre").innerHTML = "" ;
+        document.querySelector(".errorAsunto").innerHTML = "" ;
+        document.querySelector(".errorMensaje").innerHTML = "" ;
+        };
+
+    function exito () {
+        document.querySelector(".resultado").innerHTML = "Formulario paso la válidación" ;
+        };
+
+    function validar (nombre,asunto,mensaje) {
+        let pasamosLaValidacion = true ;
+        let validacion = /[a-zA-Z]/gim ;
+
+        if (validacion.test(nombre) == false) {
+            document.querySelector( ".errorNombre" ).innerHTML = "Ingrese un nombre válido."
+            pasamosLaValidacion = false ;
+    }
+
+        if (validacion.test(asunto) == false ) {
+            document.querySelector( ".errorAsunto" ).innerHTML = "Ingrese un texto válido."
+            pasamosLaValidacion = false ;
+        };
+
+        if (validacion.test(mensaje) == false ) {
+            document.querySelector( ".errorMensaje" ).innerHTML = "Ingrese un Mensaje por favor."
+            pasamosLaValidacion = false ;
+        };
+
+        return pasamosLaValidacion;
+
+    };
+
+
+
+
+
+
+
+    // Escríbe aquí tu código
+    </script>
+</body>
+
+</html>

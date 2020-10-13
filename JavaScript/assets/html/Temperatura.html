@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de temperatura</title>
+</head>
+<body>
+    <br>
+
+        <div class="container col-6">
+        <a href="/JavaScript/index.html"> <button>Volver</button>  </a>
+        </div>
+    </div>
+<br>
+<br>
+    
+
+<script>
+
+    var dato = +prompt('Ingrese un valor de grado celcius')
+
+    const kelvin = 273.15
+
+    let celciusKelvin = kelvin + dato
+    let celciusFarentheid = (dato * (9 / 5 )) + 32
+
+    console.log(celciusKelvin)
+    console.log(celciusFarentheid)
+
+
+    let div ='<span id="grados"></span>'
+    document.write(div)
+
+    let div2 ='<span id="grados2"></span>'
+    document.write(div2)
+
+    var grado1 = document.getElementById('grados')
+    var grado2 = document.getElementById('grados2')
+
+    var celciusK = celciusKelvin
+    var celciusF = celciusFarentheid
+
+    document.write=grado2.innerHTML = ('Los grados Kelvin de ' + dato + ' son: ' + celciusK + ' ' + 'y los grados farenheid de ' + 'son: ' + celciusF )
+
+    grados2.style.maxWidth = "35px"
+    grados2.style.color = "blue"
+    grados2.style.fontSize = "30px"
+    grados2.style.paddingTop = "3px"
+
+</script>
+
+
+</body>
+</html>
