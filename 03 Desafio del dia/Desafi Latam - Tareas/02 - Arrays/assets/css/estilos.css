@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+ 
+}
+
+.navbar {
+    background: #28A745;
+}
+
+
+h2{
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.logo{
+    height: 30px;
+    
+}
+ 
+.card-ico{
+    height: 15px;
+    padding: 0 5px;
+}
+ 
+.container{
+    background: #28A745;
+}
+
+.list-group{
+    display: inline;
+}
+
+.card-body{
+    margin: auto;
+    text-align: left;
+    list-style: none;
+}
+
+.card-text{
+    text-align: left;
+    color: #707070;
+}
+
+.card-link-1{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.v-1{
+    color: #707070;
+    font-size: 19px;
+}
+
+.v-2{
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+#line{
+    width: 80%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+
+footer{
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer>img{
+    height: 24px;
+    width: 82px;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
