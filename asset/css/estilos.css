@@ -5,7 +5,7 @@
 }
 
     body{
-        background: rgb(211, 196, 37);
+
     }
 
     h1{
@@ -28,7 +28,7 @@
         font-size: 30px;
         margin-left: 40px;
         list-style: none;
-        color: green;
+        color: rgb(24, 5, 192);
         font-weight: bolt;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -41,7 +41,7 @@
         font-size: 30px;
         margin-left: 40px;
         list-style: none;
-        color: green;
+        color: rgb(63, 4, 201);
         font-weight: bolt;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
