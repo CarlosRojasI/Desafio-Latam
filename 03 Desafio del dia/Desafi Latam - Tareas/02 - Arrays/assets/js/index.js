@@ -117,6 +117,7 @@ var todos = traumatologiaTotal.concat(radiologia.concat(consultaDental))
 
 var cajaTodos = document.getElementById("todos")
 todos.forEach((e) => {
+    console.log(e)
     cajaTodos.innerHTML += 
     `<p> ${e.paciente} </p> `
 });
@@ -151,3 +152,13 @@ var previsionFonasa = traumatologiaTotal.filter(function(f){
         fonasa.innerHTML += ` <p> ${f.paciente} - ${f.prevision} </p>`
     })
     
+
+    // var dental = consultaDental
+    // function mpPrevision(e){
+    //     $("div").html("").("titulo en h1")
+    //     e.forEach((e) =>{
+    //         $("div").append(`
+    //         <p>
+    //         ` )
+    //     })
+    // }

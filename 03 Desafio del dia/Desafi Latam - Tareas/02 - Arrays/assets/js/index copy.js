@@ -182,3 +182,26 @@ var previsionFonasa = traumatologiaTotal.filter(function(f){
         fonasa.innerHTML += ` <p> ${f.paciente} - ${f.prevision} </p>`
     })
     
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/// ejemplo de funsion en boton se debe crear un boton en el html    ///////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+
+//     function imprimirDental(arregloDeObjetos) {
+//    //     console.log(arregloDeObjetos);
+//         $("div").html("").append("<h1>Consultas Dental</h1>");
+//         arregloDeObjetos.forEach((objetoDelArray) => {
+//             $("div").append(`
+//               <p>${Object.values(objetoDelArray).join("-")}</p>
+//             `);
+//         });
+//     }
+//     //Creación de boton para mostrar citas en dental
+//     let printDental = document.getElementsByClassName("mostrarDental")[0]
+//     printDental.addEventListener("click", function () {
+//         imprimirDental(consultaDental)
+//     })
