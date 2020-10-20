@@ -1,0 +1,34 @@
+$(document).ready(function(){
+    $.ajax({
+        url: 'https://pokeapi.co/api/v2/pokemon/',
+        success: function(respuesta) {
+            respuesta.results.forEach(element => {
+                $("#selector").append(` <option value="${element.url}">${element.name}</option> `)
+
+                
+                
+            });
+        },
+       
+    });
+   
+})
+
+
+$("#selector").change(function(){
+   
+
+    var selectorurl = $('select[id=selector]').val()
+
+    $.ajax({
+        url: selectorurl,
+        success: function(respuesta) {
+          $("#imagenpokemon").attr("src",respuesta.sprites.other["official-artwork"].front_default)
+         
+        },
+       
+    });
+    
+});
+
+
