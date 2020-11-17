@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Static Template</title>
+    </head>
+    <body>
+        <input type="text"/>
+        <button onclick="hacer()">clickeame</button>
+        <h1>
+            This is a static template, there is no bundler or bundling involved!
+        </h1>
+        <script>
+            class Cliente {
+                constructor(nombre) {
+                    this.nombre = nombre;
+                    this.impuestos;
+                }
+                getNombre() {
+                    return this.nombre;
+                }
+                setNombre(nombre) {
+                    this.nombre = nombre;
+                }
+                calcularImpuesto() {
+                    return((this.impuestos.getMonto_bruto_anual() - this.impuestos.getDeducciones()) * 0.21);
+                }
+
+                setImpuestos(impuestos) {
+                    this.impuestos = impuestos;
+                }
+            }
+
+            class Impuestos {
+                constructor(monto_bruto_anual, deducciones) {
+                    this.monto_bruto_anual = monto_bruto_anual;
+                    this.deducciones = deducciones;
+                }
+                getMonto_bruto_anual() {
+                    return this.monto_bruto_anual;
+                }
+                setMonto_bruto_anual(monto_bruto_anual) {
+                    this.monto_bruto_anual = monto_bruto_anual;
+                }
+                getDeducciones() {
+                    return this.deducciones;
+                }
+                setDeducciones(deducciones) {
+                    this.deducciones = deducciones;
+                }
+            }
+
+            const cliente = new Cliente("Pedro");
+            const impuestos = new Impuestos();
+
+            function hacer() {
+                let montoAnual = Number(document.getElementsByTagName("input")[0].value);
+
+                impuestos.setMonto_bruto_anual(montoAnual);
+                impuestos.setDeducciones(200);
+
+                cliente.setImpuestos(impuestos);
+
+                console.log(cliente.calcularImpuesto());
+
+                document.write(cliente.calcularImpuesto());
+            }
+        </script>
+    </body>
+</html>
+
+<!-- https://desafios.s3.amazonaws.com/uploads/challenge_solution/file/9227/02_s_Desaf%C3%ADo_-_Clases_en_ES6__Puntaje_.pdf?X-Amz-Expires=60000&X-Amz-Date=20201026T152454Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJQ77P3ZFMZDQY24Q/20201026/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=e5b3ac7588a7a7e5f1710dc7b34081edef770b16b97fdde5090542e048c4a374 -->

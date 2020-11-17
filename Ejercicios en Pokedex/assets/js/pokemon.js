@@ -54,7 +54,7 @@ $(document).ready(function(){
     // Canvas
     
 
-    function cainvas(hp,defensa,ataque,ataqueEspecial,defensaEspecial,speed){
+    function canvas(hp,defensa,ataque,ataqueEspecial,defensaEspecial,speed){
     var chart = new CanvasJS.Chart("chartContainer", {
         theme: "dark", // "light1", "light2", "dark1"
         animationEnabled: true,
@@ -74,7 +74,7 @@ $(document).ready(function(){
           suffix: "pts"
         },
         data: [{
-          type: "pie",
+          type: "bar",
           axisYType: "secondary",
           yValueFormatString: "#,###.##",
           indexLabel: "{y}",
